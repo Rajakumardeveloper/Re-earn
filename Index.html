@@ -364,21 +364,25 @@
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s;
+            padding: 30px;
+            text-align: center;
         }
         
         .team-member:hover {
             transform: translateY(-10px);
         }
         
-        .member-img {
-            height: 250px;
-            background-color: #ddd;
-            background-size: cover;
-            background-position: center;
-        }
-        
-        .member-info {
-            padding: 20px;
+        .member-icon {
+            width: 80px;
+            height: 80px;
+            background-color: var(--primary-light);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2rem;
         }
         
         .member-info h3 {
@@ -863,38 +867,57 @@
             
             <div class="team-container">
                 <div class="team-member">
-                    <div class="member-img" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+                    <div class="member-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
                     <div class="member-info">
-                        <h3>Alex Johnson</h3>
-                        <p class="member-role">Founder & Recycling Specialist</p>
-                        <p>With over 10 years in environmental science, Alex started GreenCycle to combat e-waste in our community.</p>
+                        <h3>Arpit Keshari</h3>
+                        <p class="member-role">Chief Executive Officer (CEO)</p>
+                        <p>Leading the vision and strategy for GreenCycle Solutions with 12+ years of environmental industry experience.</p>
                     </div>
                 </div>
                 
                 <div class="team-member">
-                    <div class="member-img" style="background-image: url('https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+                    <div class="member-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
                     <div class="member-info">
-                        <h3>Maria Garcia</h3>
-                        <p class="member-role">Operations Manager</p>
-                        <p>Maria ensures our pickups run smoothly and our processing facilities meet the highest environmental standards.</p>
+                        <h3>Harsh Gupta</h3>
+                        <p class="member-role">Chief Operating Officer (COO)</p>
+                        <p>Oversees daily operations and ensures our recycling processes meet the highest environmental standards.</p>
                     </div>
                 </div>
                 
                 <div class="team-member">
-                    <div class="member-img" style="background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+                    <div class="member-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
                     <div class="member-info">
-                        <h3>David Chen</h3>
-                        <p class="member-role">Logistics Coordinator</p>
-                        <p>David optimizes our pickup routes to minimize fuel consumption and reduce our carbon footprint.</p>
+                        <h3>Roshan Gupta</h3>
+                        <p class="member-role">HR Head</p>
+                        <p>Manages our talented team and fosters a culture of environmental responsibility and excellence.</p>
                     </div>
                 </div>
                 
                 <div class="team-member">
-                    <div class="member-img" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+                    <div class="member-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
                     <div class="member-info">
-                        <h3>Sarah Williams</h3>
-                        <p class="member-role">Community Outreach</p>
-                        <p>Sarah works with local businesses and schools to promote responsible e-waste disposal practices.</p>
+                        <h3>Deepankar Kumar</h3>
+                        <p class="member-role">Chief Financial Officer (CFO)</p>
+                        <p>Manages financial operations and ensures sustainable growth for our environmental initiatives.</p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3>Rajiv Mandal</h3>
+                        <p class="member-role">Marketing Head</p>
+                        <p>Drives awareness about e-waste recycling and builds community partnerships for a greener future.</p>
                     </div>
                 </div>
             </div>
@@ -1037,7 +1060,8 @@
                             </div>
                             <div>
                                 <h4>Phone Number</h4>
-                                <p>(555) 123-4567</p>
+                                <p>+91 9198137002</p>
+                                <p style="font-size: 0.9rem; color: var(--gray); margin-top: 5px;">Call us for pickup scheduling or inquiries</p>
                             </div>
                         </div>
                         
@@ -1047,7 +1071,8 @@
                             </div>
                             <div>
                                 <h4>Email Address</h4>
-                                <p>info@greencycle.com</p>
+                                <p>santoshkeshri626@gmail.com</p>
+                                <p style="font-size: 0.9rem; color: var(--gray); margin-top: 5px;">For business inquiries and partnerships</p>
                             </div>
                         </div>
                         
@@ -1057,7 +1082,7 @@
                             </div>
                             <div>
                                 <h4>Business Hours</h4>
-                                <p>Monday - Friday: 8am - 6pm<br>Saturday: 9am - 4pm</p>
+                                <p>Monday - Friday: 8am - 6pm<br>Saturday: 9am - 4pm<br>Sunday: Emergency pickups only</p>
                             </div>
                         </div>
                     </div>
@@ -1154,8 +1179,8 @@
                     <h4>Contact Info</h4>
                     <ul>
                         <li><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> 123 Green Way, Eco City</li>
-                        <li><i class="fas fa-phone" style="margin-right: 10px;"></i> (555) 123-4567</li>
-                        <li><i class="fas fa-envelope" style="margin-right: 10px;"></i> info@greencycle.com</li>
+                        <li><i class="fas fa-phone" style="margin-right: 10px;"></i> +91 9198137002</li>
+                        <li><i class="fas fa-envelope" style="margin-right: 10px;"></i> santoshkeshri626@gmail.com</li>
                     </ul>
                 </div>
             </div>
